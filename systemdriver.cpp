@@ -8,15 +8,13 @@ using namespace std;
 int main() {
     cout << "hello 1";
 	try {
-	    cout << "hello 1";
+	    
 		SISystem siSystem;
-		cout << "hello 1";
 
 		int authenticated = false;
 		int tries = 0;
 		while (true) {
 			if (!authenticated)
-			    cout << "hello 2";
 				authenticated = siSystem.login();
 
 			if (authenticated) {
